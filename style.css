@@ -123,7 +123,7 @@ html {
     right: 0;
   }
   
-  @media (max-width: 800px) {
+  @media (max-width: 600px) {
     nav a {
       display: none;
     }
