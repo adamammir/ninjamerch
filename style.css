@@ -1,0 +1,153 @@
+html {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+  }
+  
+  body {
+    margin: 0;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  nav {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 15px;
+    background-color: #e50239;
+    margin: 0;
+  }
+  
+  nav button {
+    display: none;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  nav a#brand-link {
+    font-weight: 600;
+  }
+  
+  article, aside {
+    position: absolute;
+    width: 50vw;
+    height: calc(100vh - 44px);
+  }
+
+  
+  article {
+    z-index: 2;
+    left: 0;
+    text-align: center;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+  }
+
+  article img{
+    display: none;
+  }
+  
+  article #name-input {
+    border: none;
+    border-bottom: solid 1px gray;
+    margin-bottom: 20px;
+    padding: 10px;
+  }
+
+  article #name-input {
+    border: none;
+    border-bottom: solid 1px gray;
+    margin-bottom: 20px;
+    padding: 10px;
+  }
+
+  article #phone-input {
+    border: none;
+    border-bottom: solid 1px gray;
+    margin-bottom: 20px;
+    padding: 10px;
+  }
+
+  article #address-input {
+    border: none;
+    border-bottom: solid 1px gray;
+    margin-bottom: 20px;
+    padding: 10px;
+  }
+
+  article #postcode-input {
+    border: none;
+    border-bottom: solid 1px gray;
+    margin-bottom: 20px;
+    padding: 10px;
+  }
+
+  article #quantity-input {
+    border: none;
+    border-bottom: solid 1px gray;
+    margin-bottom: 20px;
+    padding: 10px;
+  }
+  
+  article button {
+    border: none;
+    background: #e50239;
+    color: white;
+    padding: 10px 15px;
+    margin-bottom: 30px;
+  }
+  
+  article h1 {
+    margin: 0;
+    padding: 30px;
+  }
+  
+  article h3 {
+    font-weight: 300;
+  }
+  
+  aside {
+    z-index: 1;
+    background: url(image/mask.jpeg);
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+
+    right: 0;
+  }
+  
+  @media (max-width: 800px) {
+    nav a {
+      display: none;
+    }
+  
+    nav button {
+      display: none;
+    }
+  
+    nav a#brand-link {
+      display: block;
+    }
+  
+    article, aside {
+      width: 100vw;
+      left: 0;
+      right: 0;
+    }
+  
+    aside {
+        opacity: .5;
+        filter: blur(2px);
+    }
+
+    article img {
+      display: block;
+    }
+  }

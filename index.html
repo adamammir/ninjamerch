@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Ninja Merch</title>
+</head>
+<body>
+  <nav>
+    <a href="#" id="brand-link">Ninja Merch</a>
+    <button>Home</button>
+    <a href="#">Home</a>
+  </nav>
+
+  <article>
+    <h1>Order our first Ninja Van Merch today!</h1>
+    <h3>Ninja Van Mask</h3>
+    <img><img src="image/mask.jpeg"style="width:200px;height:200px;"></img>
+    <h4>RM35 per pieces<br/>Cash-on-Delivery</h4>
+    <input id="name-input" type="text" placeholder="Full Name">
+    <input id="phone-input" type="text" placeholder="Phone Number">
+    <input id="address-input" type="text" placeholder="Address">
+    <input id="postcode-input" type="text" placeholder="Postcode">
+    <input id="quantity-input" type="number" placeholder="Quantity"><br/>
+    <button id="order">Order Now!</button>
+  </article>
+  <aside></aside>
+</body>
+<script>
+  const btn = document.getElementById('order')
+  btn.onclick = function() {
+    document.body.style.background = 'red'
+  }
+</script>
+</html>
